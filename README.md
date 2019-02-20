@@ -1,4 +1,4 @@
-# project5
+# Project 6 - Computer Prototype 1
 Over the next three group assignments (P6, P7, and P8), you will build a computer-based prototype of your project that supports your three to five task scenarios and includes your three selected project components. You should implement (at a minimum) support for one new task and one new component in each assignment. This means you should have one component and task implemented in P6, two in P7, and all three in P8.
 
 In studio for the rest of the quarter, you will be doing user tests of your computer prototype with the other students in your section. This will give you an opportunity to get feedback and learn about the weaknesses of your design so that you can improve them for your final prototype in P9.
