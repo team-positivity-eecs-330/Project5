@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-
 <html>
+  
 <title>W3.CSS Template</title>
 <meta charset="utf-8"/>
-
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body>
-  <header class="title">Happitivity</header>
+  <div class="container">
+        <div class="row">
+          <h1 style="text-align: center; color: #3B5998;">Happivity</h1>
+        </div>
+        <div class="row">
+          <h2 style="text-align:center">Login or Create Account</h2>
+          <div class="vl">
+            <span class="vl-innertext"></span>
+          </div>
+          <div class="col">
+              <form action="menu.html">
+              <input style ="visibility: hidden">  
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Login">
+            </form>
+            </div>
+          <div class="col">
+              <form action="menu.html">
+              <input type="text" name="email" placeholder="Email" required>
+              <input type="text" name="username" placeholder="Username" required>
+              <input type="password" name="password" placeholder="Password" required>
+              <input type="submit" value="Sign-Up">
+            </form>
+          </div>
+        </div>
+    </div>
+    
+    <div class="bottom-container">
+      <div class="row">
+        <div class="col">
+          <a href="forgotpassword.html" style="color:white" class="btn">Forgot password?</a>
+        </div>
+        <div class="col">
+            <a href="https://github.com/team-positivity-eecs-330/TeamPositivity" style="color:white" class="btn">GitHub Page</a>
+        </div>
+      </div>
+    </div>
 
-  <form class="signin">
+<!-- 
     Username: <br>
-    <input id="username" type="text" placeholder="Enter Username" >
+    <input id="username" type="text" placeholder="Enter Username" required>
     <br>
     Password: <br>
-    <input id="password" type="text" placeholder="Enter Password" >
+    <input id="password" type="text" placeholder="Enter Password" required>
     <br>
-    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
     <br>
-    <input type="button" onclick="location.href='newaccount.html';" value="Create Account" />
+
+    <input type="submit" value="Login" />
+    <br>
+    <input type="button" onclick="location.href='forgotpassword.html';" value="Forgot Password?" />
+
+    <br>
+    <input type="button" onclick="location.href='newaccount.html';" value="Create New Account" />
 
 
   </form>
-
+  -->
 
 
  <script src="javascript/pos.js"></script> 
+
 </body>
 </html>
