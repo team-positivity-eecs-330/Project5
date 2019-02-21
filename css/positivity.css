@@ -1,5 +1,6 @@
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 .title{
@@ -18,7 +19,7 @@ body {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 0 30px 0;
-} 
+}
 
 .menu-container {
   position: relative;
@@ -26,6 +27,17 @@ body {
   background-color: lightcyan;
   padding: 20px 0 200px 0;
 
+}
+
+.login-container {
+  width: 500px;
+  height: auto;
+  position: relative;
+  border-radius: 5px;
+  background-color: lightcyan;
+  padding: 20px 0px 200px 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* style inputs and link buttons */
@@ -108,7 +120,7 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* vertical line */
+/* vertical line for 1/2 screen */
 .vl {
   position: absolute;
   left: 50%;
@@ -117,17 +129,8 @@ input[type=submit]:hover {
   height: 175px;
 }
 
-/* text inside the vertical line */
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-}
-
+/* vertical line for menu pages */
+/* for 1/3 of the screen */
 .vl33 {
   position: absolute;
   left: 33%;
@@ -136,6 +139,7 @@ input[type=submit]:hover {
   height: 175px;
 }
 
+/* for 2/3 of the screen */
 .vl66 {
   position: absolute;
   left: 66%;
