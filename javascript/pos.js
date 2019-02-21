@@ -1,6 +1,2 @@
-var textboxValue = document.getElementById("textbox").value;
-console.log(textboxValue)
-
-function myFunction() {
-    console.log("hhhhhh");
-}
+// To be implemented.
+// We have this file here just so that we could link it for future use //

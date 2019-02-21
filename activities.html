@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 
 <html>
-<title>W3.CSS Template</title>
+<title>Activities</title>
 <meta charset="utf-8"/>
 
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body>
-  <div class="bottom-container">
-      <div class="row">
-        <div class="col">
-          <a href="login.html" style="color:white" class="btn">Login Page</a>
-        </div>
-        <div class="col">
-          <a href="menu.html" style="color:white" class="btn">Home Menu</a>
-        </div>
+  <div class="menu-container">
+    <div class="nav">
+        <div class="col" id = "navHome">
+            <a href="menu.html"><img src="assets/button__home.png"></a>
+          </div>
+          <div class="col" id="navUser">
+            <a href="user-dog.html"><img src="assets/button__user.png"</a>
+          </div>
       </div>
-    </div>
 
-  <div class="menu-container">   
-      <div class="row">
-        <h2 style="text-align:center">Activities</h2>
-        
-        <div class="vl33">
-          <span class="vl-innertext"></span>
-        </div>
+      <div class="col33" id = "aniCol">
+          <a href="https://www.instagram.com/aniimalscute/?hl=en" target="_blank">
+            <img src = "assets/button__animal.png">
+          </a>
+      </div>
 
-        <div class="vl66">
-            <span class="vl-innertext"></span>
-          </div>
+      <div class="col33" id = "musicCol">
+          <img src = "assets/button__music.png">
+      </div>
 
-          <div class="col33">
-              <form action="activities.html">
-                <input type="submit" value="A">
-            </div>
-
-        <div class="col33">
-            <form action="activities.html">
-              <input type="submit" value="B">
-            </form>
-          </div>
-
-        <div class="col33">
-          <form action="activities.html">
-            <input type="submit" value="C">
-          </form>
-        </div>
-        
+      <div class="col33" id = "medCol">
+        <img src = "assets/button__meditation.png">
       </div>
   </div>
- <script src="javascript/pos.js"></script> 
+
+ <script src="javascript/pos.js"></script>
 </body>
 </html>

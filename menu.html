@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 
 <html>
-<title>W3.CSS Template</title>
+<title>Menu</title>
 <meta charset="utf-8"/>
 
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body>
-  <div class="bottom-container">
-      <div class="row">
-        <div class="col">
-          <a href="login.html" style="color:white" class="btn">Login Page</a>
-        </div>
-        <div class="col">
-          <a href="menu.html" style="color:white" class="btn">Home Menu</a>
-        </div>
+  <div class="menu-container">
+    <div class="nav">
+        <div class="col" id = "navHome">
+            <a href="menu.html"><img src="assets/button__home.png"></a>
+          </div>
+          <div class="col" id="navUser">
+            <a href="user-dog.html"><img src="assets/button__user.png"</a>
+          </div>
       </div>
-    </div>
 
-  <div class="menu-container">   
-      <div class="row">
-        <h2 style="text-align:center">Menu</h2>
-        
-        <div class="vl33">
-          <span class="vl-innertext"></span>
-        </div>
+      <div class="col33" id = "actCol">
+          <a href="activities.html">
+            <img src = "assets/button__activity.png">
+          </a>
+      </div>
 
-        <div class="vl66">
-            <span class="vl-innertext"></span>
-          </div>
+      <div class="col33" id = "conCol">
+          <img src = "assets/button__connect.png">
+      </div>
 
-          <div class="col33">
-              <form action="activities.html">
-                <input type="submit" value="Activities">
-            </div>
-
-        <div class="col33">
-            <form action="connect.html">
-              <input type="submit" value="Connect">
-            </form>
-          </div>
-
-        <div class="col33">
-          <form action="resources.html">
-            <input type="submit" value="Resources">
-          </form>
-        </div>
-        
+      <div class="col33" id = "resCol">
+        <img src = "assets/button__resources.png">
       </div>
   </div>
- <script src="javascript/pos.js"></script> 
+
+ <script src="javascript/pos.js"></script>
 </body>
 </html>
