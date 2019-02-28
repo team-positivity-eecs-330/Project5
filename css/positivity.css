@@ -238,6 +238,20 @@ input[type=submit]:hover {
   filter: contrast(110%)
 }
 
+#resources-button2{
+  background-color: rgb(96, 205, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 650px) {
