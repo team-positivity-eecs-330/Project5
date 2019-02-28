@@ -41,7 +41,6 @@ body {
   padding: 200px 0px 200px 0px;
 }
 
-
 /* navigation */
 .nav {
   text-align: center;
@@ -111,6 +110,11 @@ input:hover,
   padding-bottom: 20px;
 }
 
+.links {
+  width: 500px;
+  margin: auto;
+}
+
 /* style the submit button */
 input[type=submit] {
   background-color: #EF9420;
@@ -146,6 +150,8 @@ input[type=submit]:hover {
   margin-top: 6px;
   height: 800px;
   align-items: center;
+  text-align: center;
+  color: #4D4D4D;
 }
 
 /* fitting images into the column */
@@ -199,12 +205,12 @@ input[type=submit]:hover {
 /* ACTIVITIES PAGE */
 /* animal column */
 #animalCol{
-  background-color: #7FBBC7;
+  background-color: #B1E0D9;
 }
 
 /* music column */
 #musicCol{
-  background-color: #BCDEE3;
+  background-color: #D6E7E4;
 }
 
 /* meditation column */
