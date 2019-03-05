@@ -151,7 +151,8 @@ input[type=submit]:hover {
   height: 800px;
   align-items: center;
   text-align: center;
-  color: #4D4D4D;
+  color: white;
+  font-size: 20px;
 }
 
 /* fitting images into the column */
