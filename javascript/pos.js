@@ -4,7 +4,12 @@ function goBack(){
 }
 
 function pointEarned(){
-  alert("YAY! You earned 100 points!");
+  //alert("YAY! You earned 100 points!");
+  document.getElementById("commentPoints").style.display="inline-block";
+}
+
+function hidePopup(){
+  document.getElementById("commentPoints").style.display="none";
 }
 
 function submitText(){
