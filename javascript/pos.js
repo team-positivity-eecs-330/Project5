@@ -4,7 +4,7 @@ function goBack(){
 }
 
 function pointEarned(){
-  alert("YAY! You earned 100 points!")
+  alert("YAY! You earned 100 points!");
 }
 
 function submitText(){
@@ -15,12 +15,21 @@ function submitText(){
 }
 
 function newComment(){
+  var newDate = new Date();
+  var datetime = "  (" + newDate.today() + " - " + newDate.timeNow() + ")";
+
   var commentDiv = document.createElement("div");
   commentDiv.id = "forumText"
-  var userCont = document.createTextNode("come on");
-  commentDiv.appendChild(userCont);
-  var element = document.getElementById("forumContain");
-  console.log(typeof(element))
-  console.log("YO")
-  element.appendChild(commentDiv);
+  commentDiv.innerHTML = "<b>Me</b>:" + datetime + "<br>" + document.getElementById("forumNewText").value;
+  document.getElementById("forumContain").appendChild(commentDiv);
+}
+
+// For todays date;
+Date.prototype.today = function () { 
+  return ((this.getDate() < 10)?"0":"") + this.getDate() +"/"+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ this.getFullYear();
+}
+
+// For the time now
+Date.prototype.timeNow = function () {
+   return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes();
 }
