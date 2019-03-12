@@ -1,6 +1,7 @@
 
 body {
   font-family: Avenir, sans-serif;
+  align-content: center;
 
 }
 
@@ -287,17 +288,18 @@ input[type=submit]:hover {
 }
 
 .points{
+  /* left:auto; */
   position: fixed;
-  top:100px;
-  left:calc(50% - 250px);
+  top:25%;
+  left:25%;
   visibility: hidden;
   height: 40%;
+  width: 50%;
   z-index: 100;
 }
 
 #badgeInfo{
   height: 60%;
-  align-content: center;
 }
 
 #backdrop{
