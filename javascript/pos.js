@@ -5,7 +5,6 @@ var clickedLink = '';
 
 function goBack(){
   window.history.back();
-  console.log("funtion connected")
 }
 
 function linkClicked(linkVal){
@@ -34,7 +33,6 @@ function toggle_info_viz(){
 }
 
 function toggleOverlay(linkVer){
-  console.log("PLEASE")
   if (popup_viz){
     popup_viz = !popup_viz;
     document.getElementById("commentPoints").style.visibility = "hidden";
@@ -45,7 +43,6 @@ function toggleOverlay(linkVer){
     document.getElementById("badgeInfo").style.visibility = "hidden";
   }
   overlay_viz = !overlay_viz;
-  console.log(clickedLink)
   if(clickedLink == "animal"){
     window.open('https://www.instagram.com/aniimalscute/?hl=en', '_blank')
   }
@@ -56,7 +53,6 @@ function toggleOverlay(linkVer){
     window.open('https://www.youtube.com/watch?v=0CYm6Gj_Qmw', '_blank')
   }
   clickedLink = '';
-  console.log(clickedLink)
   document.getElementById("overlay").style.visibility = "hidden";
 
 
