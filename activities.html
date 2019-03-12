@@ -11,7 +11,7 @@
   </div>
   <div class="menu-container">
     <img class="points" id="badgeInfo" src="assets/popup_badgeinfo.png" onclick="toggle_info_viz()">
-  <img class="points" id="commentPoints" src="assets/alert_popup 2.png" onclick="toggle_viz()">
+  <img class="points" id="commentPoints" src="assets/alert_popup 2.png" onclick="toggleOverlay()">
     <div class="nav">
         <div class="col" id = "navHome">
             <a href="menu.html"><img class="responsive-button" id="menu-button" src="assets/button__home.png"></a>
@@ -22,22 +22,17 @@
             <img class="responsive-button"id="menu-button" src="assets/button_back.png" onclick ="goBack()">
           </div>
       </div>
-      <!-- <img class="points" id="badgeInfo" src="assets/popup_badgeinfo.png" onclick="toggle_info_viz()">
-      <img class="points" id="commentPoints" src="assets/alert_popup 2.png" onclick="toggle_viz()"> -->
+
       <div class="col33" id = "animalCol">
-          <a href="https://www.instagram.com/aniimalscute/?hl=en" target="_blank">
-            <img class="responsive-button" src = "assets/button_animal.png" onclick="toggle_viz()">
-          </a>
+            <img class="responsive-button" src = "assets/button_animal.png" onclick="linkClicked('animal'); toggle_viz()">
       </div>
 
       <div class="col33" id = "musicCol">
-          <a href="https://open.spotify.com/playlist/37i9dQZF1DX5Ufz5ldo0J4" target="_blank" onclick="toggle_viz()">
-            <img class="responsive-button" src = "assets/button_music.png"></a>
+            <img class="responsive-button" src = "assets/button_music.png" onclick="linkClicked('music'); toggle_viz()">
       </div>
 
       <div class="col33" id = "medCol">
-        <a href="https://www.youtube.com/watch?v=0CYm6Gj_Qmw" target="_blank" onclick="toggle_viz()">
-          <img class="responsive-button" src = "assets/button_meditation.png"></a>
+          <img class="responsive-button" src = "assets/button_meditation.png" onclick="linkClicked('meditation'); toggle_viz()">
       </div>
   </div>
 

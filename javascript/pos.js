@@ -1,12 +1,16 @@
 var popup_viz = false;
 var info_viz = false;
 var overlay_viz = false;
+var clickedLink = '';
 
 function goBack(){
   window.history.back();
   console.log("funtion connected")
 }
 
+function linkClicked(linkVal){
+  clickedLink = linkVal;
+}
 
 function toggle_viz(){
   popup_viz = !popup_viz;
@@ -29,7 +33,8 @@ function toggle_info_viz(){
   document.getElementById("overlay").style.visibility = toggle;
 }
 
-function toggleOverlay(){
+function toggleOverlay(linkVer){
+  console.log("PLEASE")
   if (popup_viz){
     popup_viz = !popup_viz;
     document.getElementById("commentPoints").style.visibility = "hidden";
@@ -40,7 +45,20 @@ function toggleOverlay(){
     document.getElementById("badgeInfo").style.visibility = "hidden";
   }
   overlay_viz = !overlay_viz;
+  console.log(clickedLink)
+  if(clickedLink == "animal"){
+    window.open('https://www.instagram.com/aniimalscute/?hl=en', '_blank')
+  }
+  else if (clickedLink == "music") {
+    window.open('https://open.spotify.com/playlist/37i9dQZF1DX5Ufz5ldo0J4', '_blank')
+  }
+  else if(clickedLink == "meditation"){
+    window.open('https://www.youtube.com/watch?v=0CYm6Gj_Qmw', '_blank')
+  }
+  clickedLink = '';
+  console.log(clickedLink)
   document.getElementById("overlay").style.visibility = "hidden";
+
 
 }
 

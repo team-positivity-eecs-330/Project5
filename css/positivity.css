@@ -288,22 +288,17 @@ input[type=submit]:hover {
 }
 
 .points{
-  /* left:auto; */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  /* top:calc();
-  left:25%; */
   visibility: hidden;
-  /* height: 500px;
-  min-width: 400px; */
   z-index: 100;
   height: 50%;
 }
 
 #badgeInfo{
-  height: 60%;
+  height: 50%;
 }
 
 #backdrop{
