@@ -6,6 +6,8 @@
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body background="assets/login__bg.png">
+  <div id = "overlay" onclick = "toggleOverlay()">
+  </div>
   <div class="menu-container">
     <div class="nav">
         <div class="col" id = "navHome">
@@ -13,13 +15,15 @@
         </div>
         <div class="col" id="navUser">
           <a href="user-dog.html"><img class="responsive-button"id="menu-button" src="assets/button__user.png"></a>
+          <img class="responsive-button" id="menu-button" src="assets/button_info.png" onclick="toggle_info_viz()">
           <img class="responsive-button"id="menu-button" src="assets/button_back.png" onclick ="goBack()">
         </div>
     </div>
 
     <div class="user-container" id= "forumContain">
       <div class="hello">Welcome to the forum!</div>
-      <img class="points" id="commentPoints" src="assets/alert_popup 2.png" onclick="hidePopup()">
+      <img class="points" id="commentPoints" src="assets/alert_popup 2.png" onclick="toggle_viz()">
+      <img class="points" id="badgeInfo" src="assets/popup_badgeinfo.png" onclick="toggle_info_viz()">
       <textarea id = "forumNewText" placeholder= "Type your comments here!" ></textarea>
       <input type="submit" value="Submit" onclick="submitText()"></input>
       <div id = "comments">
@@ -30,6 +34,7 @@
       </div>
     </div>
   </div>
+
 
 
 

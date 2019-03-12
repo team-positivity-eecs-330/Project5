@@ -7,17 +7,21 @@
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body background="assets/login__bg.png">
+  <div id = "overlay" onclick = "toggleOverlay()">
+  </div>
   <div class="nav">
       <div class="col" id = "navHome">
           <a href="menu.html"><img class="responsive-button" id="menu-button" src="assets/button__home.png"></a>
         </div>
         <div class="col" id="navUser">
           <a href="user-shu.html"><img class="responsive-button" id="menu-button" src="assets/button__user.png"></a>
+          <img class="responsive-button" id="menu-button" src="assets/button_info.png" onclick="toggle_info_viz()">
           <img class="responsive-button"id="menu-button" src="assets/button_back.png" onclick ="goBack()">
         </div>
     </div>
 
   <div class="user-container">
+    <img class="points" id="badgeInfo" src="assets/popup_badgeinfo.png" onclick="toggle_info_viz()">
     <div class="hello">Welcome, Shu!</div>
         <div class="useCol">
             <img src="assets/shu.jpg">
@@ -26,7 +30,9 @@
               <p class="user-data"><b>Username:</b><br>ShutheBestTA</p>
               <p class="user-data"><b>Email:</b><br> shuhan2020@u.northwestern.edu</p>
               <p class="user-data"><b>Member since:</b><br> 02/20/2019</p>
-              <p class="user-data"><b>Points total:</b><br> 9000</p>
+              <p class="user-data"><b>Points total:</b><br> 500</p>
+              <p class="user-data"><b>Badges earned:</b><br></p>
+              <img src="assets/user_1BADGE.png">
               <form action="user-dog.html">
                 <input type="submit" value="Switch User"></input></form>
               <form action="login.html">

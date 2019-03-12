@@ -6,17 +6,21 @@
 <link rel="stylesheet" type="text/css" href="css/positivity.css">
 
 <body background="assets/login__bg.png">
+  <div id = "overlay" onclick = "toggleOverlay()">
+  </div>
   <div class="nav">
       <div class="col" id = "navHome">
           <a href="menu.html"><img class="responsive-button" id="menu-button" src="assets/button__home.png"></a>
         </div>
         <div class="col" id="navUser">
           <a href="user-dog.html"><img class="responsive-button"id="menu-button" src="assets/button__user.png"></a>
+          <img class="responsive-button" id="menu-button" src="assets/button_info.png" onclick="toggle_info_viz()">
           <img class="responsive-button"id="menu-button" src="assets/button_back.png" onclick ="goBack()">
         </div>
     </div>
 
   <div class="login-container">
+      <img class="points" id="badgeInfo" src="assets/popup_badgeinfo.png" onclick="toggle_info_viz()">
         <div class="row">
           <div class="title">Resources</div>
           <div class="login">Want some extra happiness?</div>

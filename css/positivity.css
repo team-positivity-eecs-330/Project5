@@ -1,6 +1,20 @@
 
 body {
   font-family: Avenir, sans-serif;
+
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  visibility:hidden; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 50; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 * {
@@ -280,9 +294,23 @@ input[type=submit]:hover {
 }
 
 .points{
-  display:none;
-  padding-left: 30%;
+  position: fixed;
+  top:100px;
+  left:calc(50% - 250px);
+  visibility: hidden;
   height: 40%;
+  z-index: 100;
+}
+
+#badgeInfo{
+  left:calc(50% - 340px);
+  height: 80%;
+}
+
+#backdrop{
+  background: black;
+  z-index: 50;
+  opacity: 0.8;
 }
 
 /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
