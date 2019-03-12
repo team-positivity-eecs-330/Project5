@@ -45,7 +45,6 @@ function toggleOverlay(){
 }
 
 function submitText(){
-  // document.getElementById("forumText").innerHTML += ("\n" + document.getElementById("forumNewText").value) ;
   if(document.getElementById("forumNewText").value){
       newComment();
       toggle_viz();

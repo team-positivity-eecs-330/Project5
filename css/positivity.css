@@ -5,16 +5,16 @@ body {
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  visibility:hidden; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
+  position: fixed;
+  visibility:hidden;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 50; /* Specify a stack order in case you're using a different order for other elements */
+  background-color: rgba(0,0,0,0.5);
+  z-index: 50;
 }
 
 * {
@@ -88,14 +88,13 @@ input,
   display: inline-block;
   font-size: 14px;
   line-height: 14px;
-  text-decoration: none; /* remove underline from anchors */
+  text-decoration: none;
 }
 
 input:hover,
 .btn:hover {
   opacity: 1;
 }
-
 
 .title {
   font-size: 72px;
@@ -278,12 +277,6 @@ input[type=submit]:hover {
   opacity: 1;
   transform: scale(1.2);
 }
-#responsive-menu-button{
-  /* height: 25%;
-  min-height: 80px;
-  min-width: 100px;
-  width: 80%; */
-}
 
 #menu-button:hover{
   filter: contrast(110%)
@@ -303,8 +296,8 @@ input[type=submit]:hover {
 }
 
 #badgeInfo{
-  left:calc(50% - 340px);
-  height: 80%;
+  height: 60%;
+  align-content: center;
 }
 
 #backdrop{
